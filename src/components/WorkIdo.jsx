@@ -1,10 +1,12 @@
 import { FaCode, FaLaptopCode, FaBrain, FaBusinessTime } from "react-icons/fa";
 import { SiReact, SiMongodb } from "react-icons/si";
 import { IoMdArrowRoundForward } from "react-icons/io";
+import { Menu } from "lucide-react";
 
 const featuresData = [
   {
     id: 1,
+    icon:<Menu/>,
     title: "Business Strategy",
     des: "Strategic planning and actions to achieve growth and success.",
   },
@@ -42,13 +44,18 @@ const featuresData = [
 
 const FeatureCards = () => {
   return (
+    <>
+    <div className="mt-8 mb-10">
+      <p className="text-[#ff104f] text-2xl mb-10">FEATURES</p>
+      <h1 className="font-bold text-3xl text-white">What I Know</h1>
+    </div>
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
       {featuresData.map((feature) => (
         <div
           key={feature.id}
           className="max-w-sm p-6 flex flex-col bg-[#212428] gap-2 shadow-[10px_5px_10px_5px_rgba(0,0,0,0.29)] dark:bg-gray-800 dark:border-gray-700 rounded-2xl transform transition-transform duration-300 ease-in-out hover:scale-105"
         >
-          {feature.icon && <div className="text-[#ff014f] text-3xl">{feature.icon}</div>}
+          {feature.icon && <div className="text-[#ff014f] text-5xl">{feature.icon}</div>}
           <a href="#">
             <h5 className="mb-2 text-2xl font-semibold text-white tracking-tight dark:text-white">
               {feature.title}
@@ -64,35 +71,8 @@ const FeatureCards = () => {
         </div>
       ))}
     </div>
+    </>
   );
 };
 
 export default FeatureCards;
-
-
-// const FeatureCards = () => {
-//   return (
-//     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-//       {featuresData.map((feature) => (
-//         <div
-//           key={feature.id}
-//           className="max-w-sm p-6 flex flex-col bg-[#212428] gap-2 shadow-[10px_5px_10px_5px_rgba(0,0,0,0.29)] dark:bg-gray-800 dark:border-gray-700 rounded-2xl transform transition-transform duration-300 ease-in-out hover:scale-105"
-//         >
-//           {feature.icon && <div className="text-[#ff014f] text-3xl">{feature.icon}</div>}
-//           <a href="#">
-//             <h5 className="mb-2 text-2xl font-semibold text-white tracking-tight dark:text-white">
-//               {feature.title}
-//             </h5>
-//           </a>
-//           <p className="mb-3 font-normal text-gray-500 dark:text-gray-400">
-//             {feature.des}
-//           </p>
-//           <a href="#" className="flex font-medium items-center text-blue-600 hover:underline">
-//             See our guideline
-//           </a>
-//           <IoMdArrowRoundForward className="text-[#ff014f] text-3xl" />
-//         </div>
-//       ))}
-//     </div>
-//   );
-// };

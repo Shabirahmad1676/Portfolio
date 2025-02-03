@@ -35,6 +35,7 @@ const Hero = () => {
       <div className='mt-4 pr-[110px]'>
           <p>FIND ME IN</p>
           <div className='mt-4 flex gap-4'>
+            
             <div className='bg-blue-500 transition delay-150 duration-300 ease-in-out hover:text-[#ff014f] hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 ring-2 p-5 rounded'><FaGithub /></div>
             <div className='bg-blue-500 transition p-5 rounded delay-150 hover:text-[#ff014f]  duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 ring-2'><BiLogoGmail />
             </div>
@@ -55,8 +56,10 @@ const Hero = () => {
       </div>
         
       </div>
-      <div>
-        <img src="/public/port.png" alt="my_img" className='h-[400px] w-[300px] rounded-[80%] mr-3 ring-[#ff014f] ring-2 shadow-card' />
+      <div className='hidden lg:block'>
+        <img src="/public/port.png" alt="my_img" 
+        
+         className='h-[400px] w-[300px] hover:drop-shadow-[5px_5px_10px_#796565] rounded-[80%] mr-3 ring-[#ff014f] ring-2 ' />
       </div>
     </div>
     
