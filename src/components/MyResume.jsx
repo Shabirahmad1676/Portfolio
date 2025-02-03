@@ -26,17 +26,17 @@ const MyResume = () => {
   return (
     <div  className=' mt-10'>
       <h1 className='mb-10 text-white text-3xl font-bold text-center'>My Resume</h1>
-      <div className='flex  justify-between items-center p-2'>
+      <div className='flex bg-[#15171acb] rounded  justify-between items-center h-[68px]'>
       {Tabs.map((tab,index)=>(
         <div
         onClick={()=>setActiveTab(index)}
-        style={{boxShadow: "0px 10px 30px rgba(65, 62, 62, 0.5)"}}
-         className='hover:bg-gradient-to-r from-gray-500 to-gray-900  rounded-lg shadow w-[180px] text-center text-white font-semibold text-2xl py-2'>
+        // style={{boxShadow: "0px 10px 30px 5px rgba(78, 59, 59, 0.5)"}}
+         className='rounded hover:bg-[#1c1e20ea] hover:border hover:border-red-700 shadow w-[180px]  text-center text-white font-semibold text-2xl py-4'>
           {tab.name}
         </div>
       ))}
       </div>
-      <div>
+      <div className='mt-8 rounded'>
         <ActiveTabComponent />
       </div>
     </div>
