@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Education from './Education'
 import Skills from './Skills'
 import Experience from './Experience'
+import { FcDownload } from "react-icons/fc";
 
 const MyResume = () => {
 

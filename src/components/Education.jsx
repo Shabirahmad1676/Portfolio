@@ -1,3 +1,5 @@
+import { FcCapacitor } from "react-icons/fc";
+
 const Education = () => {
   const experiences = [
     {
@@ -41,7 +43,8 @@ const Education = () => {
                   <div className="absolute z-40 -left-9 top-6 flex items-center justify-center text-center w-5 h-5 bg-gray-900 rounded-full">
                   <div className="absolute z-40 -left-0 ml-1  top-1 w-3  h-3 hover:border-[#ff014f] hover:bg-[#ff014f] border  bg-gray-900 rounded-full "></div>
                   </div>
-                  <div className="absolute -left-8 top-8 rounded-r w-10 h-2 bg-gray-900"></div>
+                  {/* <div className="absolute -left-8 top-8 rounded-r w-10 h-2 bg-gray-900"></div> */}
+                  <FcCapacitor  className="rotate-180 absolute top-6 -left-4 w-4"/>
                  <div className="pl-[28px] bg-[#17191C] rounded-lg  py-3">
                   <h3 className="text-xl font-semibold">{item.title}</h3>
                   <p className="text-sm text-gray-400">{item.uni} - {item.location}</p>
